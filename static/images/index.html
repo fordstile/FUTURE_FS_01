@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1f48581ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="home" class="hero">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href="#">Yakub Hussein</a></div>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#projects" onclick="closemenu()">Work</a></li>
+                    <li><a href="#skills" onclick="closemenu()">Skills</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+
+        <main>
+            <section class="intro">
+              <h1>Hello, I am Yakub</h1>
+              <p class="profession">Software Engineer</p>
+              
+              <div class="social-links">
+                <div class="icon-wrapper">
+                    <span class="line"></span>                    
+                    <div class="icons">
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                    <span class="line"></span>  
+                    
+                </div>
+                
+              </div>
+              <p class="bio">I help business grow by developing amazing web experience.If <br>you are looking for a developer that likes to get stuff <br>done,lets talk</p>
+
+              <a href="#projects" class="cta-button">
+                See My Work <i class="bx bx-chevron-down"></i>
+            </a>
+            
+            </section>
+        </main>
+    </section>
+
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- Image Column -->
+                <div class="about-col-1">
+                    <img src="static/images/user.jpeg" alt="User Image">
+                </div>
+                <!-- Text Column -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and results-driven software developer with a strong background in developing <br> and deploying web applications. I thrive on solving challenging problems and turning ideas into <br> innovative, user-centered solutions that deliver real value.</p>
+              
+                    <p>With experience in backend and frontend development, and database management, I aim to build software that is efficient, scalable, and impactful. <br> </p>
+
+                    <p>I am committed to continuous learning and enjoy staying up-to-date with emerging technologies, trends, and best practices in the tech industry. Whether collaborating in a team or working independently, I bring creativity, adaptability, and a strong focus on delivering high-quality results.</p>                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li> <br>
+                            <li><span>App Dev</span><br>Designing Web/App interfaces</li> <br>
+                            <li><span>Web Dev</span><br>Developing Web/App interfaces</li> <br>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Internship at Future Interns</li> <br>
+                            <li><span>2024 May - 2024 August</span><br>Internship at Uwezo Funds</li> <br>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022- current</span><br>Bachelor of Science in Compute Science</li> <br>
+                            <li><span>2023 - 2024</span><br>Certificate in Computer Software Engineering</li> <br>
+                            <li><span>2024</span><br>Attachment at Uwezo Funds</li> <br>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web App design</h2>
+                        <p>I create visually appealing, user-friendly websites that capture attention and provide seamless navigation, all tailored to your brand.</p>
+                        <a href="#projects">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Web App Development</h2>
+                        <p>I design and develop mobile applications that offer smooth, intuitive user experiences, ensuring functionality and performance across all devices.</p>
+                        <a href="#projects">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Mobile App design</h2>
+                        <p>I develop high-quality, user-friendly mobile and web applications tailored to your needs. Whether it's a native app, hybrid solution, or progressive web app, I ensure seamless performance, intuitive design, and scalability. My goal is to bring your ideas to life with reliable, engaging, and feature-rich applications that enhance user experiences.</p>
+                        <a href="#projects">Learn more</a>
+                    </div>
+                </div>
+                <a href="#projects" class="btn">See more</a>
+            </div>
+        </div>
+
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="static/images/project1.jpeg">
+                        <div class="layer">
+                            <h3>HomeMade Web</h3>
+                            <p>HomeMade connects chefs with customers, allowing chefs to share their dishes and manage profiles. Customers can explore dishes, view profiles, and find chefs nearby. Built with Flask for scalability and seamless user experience.</p>
+                            <a href="https://github.com/fordstile/HomeMade.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square tooltip"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="static/images/final2.jpeg">
+                        <div class="layer">
+                            <h3>Higher Airbnb</h3>
+                            <p>Higher AirBnB is a booking platform for short-term rentals. It enables hosts to manage listings, and customers to browse and book accommodations. The project focuses on user-friendly design and efficient booking features.
+
+                            </p>
+                            <a href="https://github.com/fordstile/AirBnB_clone_v4.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="static/images/image4.jpeg">
+                        <div class="layer">
+                            <h3>HomeMade Web</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium recusandae aperiam placeat impedit, numquam blanditiis! Deleniti reprehenderit dolores neque earum aspernatur esse, quibusdam quam? Voluptatum suscipit iusto voluptates omnis.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <section id="skills"  class="skills-section">
+          <h2>My Skills </h2>
+          <h3>TECHNICAL AND PROFESSIONAL</h3>
+        
+          <div class="skills-container">
+            <!-- Technical Skills -->
+            <div class="technical-skills">
+              <h4>Technical Skills</h4>
+              <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 72%"></div>
+                </div>
+                <span class="skill-percent">72%</span>
+              </div>
+              <div class="skill">
+                <div class="skill-name">C</div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%"></div>
+                </div>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 62%"></div>
+                </div>
+                <span class="skill-percent">62%</span>
+              </div>
+              <div class="skill">
+                <div class="skill-name">Java</div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill">
+                <div class="skill-name">PHP</div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 50%"></div>
+                </div>
+                <span class="skill-percent">90%</span>
+              </div>
+            </div>
+        
+            <!-- Professional Skills -->
+            <div class="professional-skills">
+              <h4>Professional Skills</h4>
+              <div class="circle-grid">
+                <div class="circular-skill" data-percent="90">
+                  <div class="circle">
+                    <svg class="svg-circle" width="80" height="80">
+                      <circle cx="40" cy="40" r="35"></circle>
+                      <circle class="progress-ring" cx="40" cy="40" r="35"></circle>
+                    </svg>
+                    <span>90%</span>
+                  </div>
+                  <p>Team Work</p>
+                </div>
+                <div class="circular-skill" data-percent="80">
+                  <div class="circle">
+                    <svg class="svg-circle" width="80" height="80">
+                      <circle cx="40" cy="40" r="35"></circle>
+                      <circle class="progress-ring" cx="40" cy="40" r="35"></circle>
+                    </svg>
+                    <span>80%</span>
+                  </div>
+                  <p>Creativity</p>
+                </div>
+                <div class="circular-skill" data-percent="55">
+                  <div class="circle">
+                    <svg class="svg-circle" width="80" height="80">
+                      <circle cx="40" cy="40" r="35"></circle>
+                      <circle class="progress-ring" cx="40" cy="40" r="35"></circle>
+                    </svg>
+                    <span>55%</span>
+                  </div>
+                  <p>Project Management</p>
+                </div>
+                <div class="circular-skill" data-percent="70">
+                  <div class="circle">
+                    <svg class="svg-circle" width="80" height="80">
+                      <circle cx="40" cy="40" r="35"></circle>
+                      <circle class="progress-ring" cx="40" cy="40" r="35"></circle>
+                    </svg>
+                    <span>70%</span>
+                  </div>
+                  <p>Communication</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> yaqubhussein7297@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone-flip"></i> +254 721 419 234</p>
+                <div class="social-icons">
+                  <a href="https://twitter.com/yaqub_97" target="_blank"><i class='bx bxl-twitter'></i></a>
+                  <a href="https://wa.me/254721419234" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                  <a href="https://instagram.com/salt.prada" target="_blank"><i class='bx bxl-instagram'></i></a>
+                  <a href="https://surl.li/ufepm" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <a href="static/images/Software_engineer_cv.pdf" download class="btn btn2">Download CV</a>
+              </div>
+              <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <footer>
+
+        </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyOTQSAU34aeI9lxJ1BxBUqlUsxrV_FRzlfDK-N6-rWABDd0ZmDZ1mDxP2OECtf6_BV/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function() {
+          msg.innerHTML = ""
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+</body>
+</html>
